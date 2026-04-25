@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>LUXE VAULT — Premium Timepieces & Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-main">LUXE</span>
+            <span class="logo-sub">VAULT</span>
+        </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="zh">繁中</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-more-btn" id="langMoreBtn">More ▾</button>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+
+    <!-- Slideshow -->
+    <div class="hero-slider">
+        <div class="hero-slide active" style="background-image: url('images/watch-1.jpg.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/watch-2.jpg.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/watch-3.jpg.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <p class="hero-eyebrow" data-en="1:1 REPLICA COLLECTION" data-zh="1:1 復刻系列">1:1 REPLICA COLLECTION</p>
+        <h1 class="hero-title" data-en="Luxury Look.<br>Smart Price." data-zh="奢華外觀<br>聰明價格">Luxury Look.<br>Smart Price.</h1>
+        <p class="hero-desc" data-en="1:1 replica timepieces & bags — indistinguishable from the original." data-zh="1:1復刻腕錶與包包——與正品無從分辨。">1:1 replica timepieces & bags — indistinguishable from the original.</p>
+
+        <!-- Price Hook -->
+        <div class="price-hook">
+            <div class="price-hook-item">
+                <span class="price-hook-label" data-en="Retail" data-zh="專櫃">Retail</span>
+                <span class="price-hook-value strike">$8,500</span>
+            </div>
+            <div class="price-hook-divider">
+                <div class="price-hook-line"></div>
+                <span class="price-hook-save" data-en="SAVE 90%" data-zh="省90%">SAVE 90%</span>
+                <div class="price-hook-line"></div>
+            </div>
+            <div class="price-hook-item">
+                <span class="price-hook-label" data-en="Our Price" data-zh="我們的價格">Our Price</span>
+                <button class="price-inquire-btn" data-en="Inquire Now →" data-zh="立即諮詢 →">Inquire Now →</button>
+            </div>
+        </div>
+
+        <button class="hero-cta" data-en="Get Best Price" data-zh="獲取最優價格">Get Best Price</button>
+    </div>
+
+    <!-- Slide Dots -->
+    <div class="hero-dots">
+        <span class="hero-dot active" data-idx="0"></span>
+        <span class="hero-dot" data-idx="1"></span>
+        <span class="hero-dot" data-idx="2"></span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+        <span data-en="Scroll to explore" data-zh="向下探索">Scroll to explore</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+    <div class="trust-item">
+        <span class="trust-icon">💎</span>
+        <span data-en="1:1 Replica Quality" data-zh="1:1復刻品質">1:1 Replica Quality</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <span class="trust-icon">🔍</span>
+        <span data-en="Indistinguishable from Original" data-zh="與正品無從分辨">Indistinguishable from Original</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <span class="trust-icon">🌍</span>
+        <span data-en="Global Discreet Shipping" data-zh="全球低調配送">Global Discreet Shipping</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <span class="trust-icon">⚡</span>
+        <span data-en="5-Min Response" data-zh="5分鐘回覆">5-Min Response</span>
+    </div>
+</div>
+
+<!-- ===== PRICE COMPARISON SECTION ===== -->
+<section class="compare-section reveal">
+    <div class="compare-inner">
+        <p class="section-eyebrow" data-en="WHY CHOOSE US" data-zh="為什麼選擇我們">WHY CHOOSE US</p>
+        <h2 class="section-title" data-en="Same Watch. 90% Less." data-zh="同款腕錶，省90%">Same Watch. 90% Less.</h2>
+
+        <div class="compare-grid">
+            <div class="compare-card retail">
+                <div class="compare-badge" data-en="Retail Store" data-zh="專櫃">Retail Store</div>
+                <div class="compare-watch-img">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80" alt="Watch">
+                </div>
+                <div class="compare-price-big">$8,500</div>
+                <ul class="compare-list">
+                    <li class="bad">✗ <span data-en="Full retail markup" data-zh="全額零售溢價">Full retail markup</span></li>
+                    <li class="bad">✗ <span data-en="Long waiting list" data-zh="漫長等待名單">Long waiting list</span></li>
+                    <li class="bad">✗ <span data-en="Limited availability" data-zh="供應有限">Limited availability</span></li>
+                    <li class="good">✓ <span data-en="Brand prestige" data-zh="品牌聲望">Brand prestige</span></li>
+                </ul>
+            </div>
+
+            <div class="compare-vs">VS</div>
+
+            <div class="compare-card ours">
+                <div class="compare-badge gold" data-en="1:1 Replica" data-zh="1:1復刻">1:1 Replica</div>
+                <div class="compare-watch-img">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=400&q=80" alt="Watch">
+                </div>
+                <div class="compare-price-big gold-text" data-en="Contact Us" data-zh="聯繫我們">Contact Us</div>
+                <ul class="compare-list">
+                    <li class="good">✓ <span data-en="1:1 replica, same look & feel" data-zh="1:1復刻，外觀手感相同">1:1 replica, same look & feel</span></li>
+                    <li class="good">✓ <span data-en="In stock, ships fast" data-zh="現貨，快速發貨">In stock, ships fast</span></li>
+                    <li class="good">✓ <span data-en="All styles available" data-zh="所有款式可選">All styles available</span></li>
+                    <li class="good">✓ <span data-en="Save up to 90%" data-zh="節省高達90%">Save up to 90%</span></li>
+                </ul>
+                <button class="compare-cta" data-en="Inquire Price →" data-zh="諮詢價格 →">Inquire Price →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCTS SECTION ===== -->
+<section class="products-section">
+    <div class="products-inner">
+        <p class="section-eyebrow" data-en="1:1 REPLICA COLLECTION" data-zh="1:1復刻系列">1:1 REPLICA COLLECTION</p>
+        <h2 class="section-title" data-en="Iconic Timepieces" data-zh="標誌性腕錶">Iconic Timepieces</h2>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&q=80" alt="Rolex Yacht-Master">
+                    <div class="product-overlay">
+                        <button class="product-inquire" data-en="Inquire Price" data-zh="諮詢價格">Inquire Price</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Rolex Yacht-Master</h3>
+                    <p data-en="Rose Gold · Black Ceramic Bezel" data-zh="玫瑰金 · 黑色陶瓷錶圈">Rose Gold · Black Ceramic Bezel</p>
+                    <div class="product-price">
+                        <span class="product-retail" data-en="Retail $8,500" data-zh="專櫃 $8,500">Retail $8,500</span>
+                        <button class="product-cta" data-en="Get Price" data-zh="獲取價格">Get Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80" alt="Rolex Submariner">
+                    <div class="product-overlay">
+                        <button class="product-inquire" data-en="Inquire Price" data-zh="諮詢價格">Inquire Price</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Rolex Submariner</h3>
+                    <p data-en="Steel · Black Dial · Date" data-zh="精鋼 · 黑色錶盤 · 日曆">Steel · Black Dial · Date</p>
+                    <div class="product-price">
+                        <span class="product-retail" data-en="Retail $9,100" data-zh="專櫃 $9,100">Retail $9,100</span>
+                        <button class="product-cta" data-en="Get Price" data-zh="獲取價格">Get Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80" alt="Patek Philippe">
+                    <div class="product-overlay">
+                        <button class="product-inquire" data-en="Inquire Price" data-zh="諮詢價格">Inquire Price</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Patek Philippe Nautilus</h3>
+                    <p data-en="Steel · Blue Dial · Bracelet" data-zh="精鋼 · 藍色錶盤 · 錶鏈">Steel · Blue Dial · Bracelet</p>
+                    <div class="product-price">
+                        <span class="product-retail" data-en="Retail $35,000" data-zh="專櫃 $35,000">Retail $35,000</span>
+                        <button class="product-cta" data-en="Get Price" data-zh="獲取價格">Get Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&q=80" alt="AP Royal Oak">
+                    <div class="product-overlay">
+                        <button class="product-inquire" data-en="Inquire Price" data-zh="諮詢價格">Inquire Price</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Audemars Piguet Royal Oak</h3>
+                    <p data-en="Steel · Blue Tapisserie Dial" data-zh="精鋼 · 藍色格紋錶盤">Steel · Blue Tapisserie Dial</p>
+                    <div class="product-price">
+                        <span class="product-retail" data-en="Retail $22,000" data-zh="專櫃 $22,000">Retail $22,000</span>
+                        <button class="product-cta" data-en="Get Price" data-zh="獲取價格">Get Price</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="products-more">
+            <button class="more-btn" data-en="View Full Catalogue →" data-zh="查看完整目錄 →">View Full Catalogue →</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== DETAIL SHOWCASE ===== -->
+<section class="detail-section reveal">
+    <div class="detail-inner">
+        <div class="detail-images">
+            <div class="detail-img-main">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=700&q=80" alt="Watch Detail">
+            </div>
+            <div class="detail-img-side">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=400&q=80" alt="Watch Side">
+                <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80" alt="Watch Back">
+            </div>
+        </div>
+        <div class="detail-content">
+            <p class="section-eyebrow" data-en="THE DETAILS" data-zh="細節展示">THE DETAILS</p>
+            <h2 class="section-title left" data-en="Replica Done Right" data-zh="復刻做到極致">Replica Done Right</h2>
+            <p class="detail-desc" data-en="Our 1:1 replicas are crafted with the same materials and precision as the originals — sapphire crystal, ceramic bezel, Swiss movement. The difference? The price tag." data-zh="我們的1:1復刻品採用與正品相同的材料和精度製造——藍寶石水晶、陶瓷錶圈、瑞士機芯。唯一的區別？價格標籤。">Our 1:1 replicas are crafted with the same materials and precision as the originals — sapphire crystal, ceramic bezel, Swiss movement. The difference? The price tag.</p>
+            <ul class="detail-points">
+                <li data-en="✦ Sapphire crystal glass" data-zh="✦ 藍寶石水晶玻璃">✦ Sapphire crystal glass</li>
+                <li data-en="✦ Swiss movement" data-zh="✦ 瑞士機芯">✦ Swiss movement</li>
+                <li data-en="✦ 316L stainless steel case" data-zh="✦ 316L不鏽鋼錶殼">✦ 316L stainless steel case</li>
+                <li data-en="✦ Ceramic bezel insert" data-zh="✦ 陶瓷錶圈鑲嵌">✦ Ceramic bezel insert</li>
+            </ul>
+            <button class="detail-cta" data-en="Inquire Now" data-zh="立即諮詢">Inquire Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATS / CLIENT COUNT ===== -->
+<section class="stats-section">
+    <div class="stats-inner">
+        <p class="section-eyebrow" data-en="OUR TRACK RECORD" data-zh="我們的成績">OUR TRACK RECORD</p>
+        <h2 class="section-title" data-en="Numbers Don't Lie" data-zh="數字不會說謊">Numbers Don't Lie</h2>
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="3847">0</div>
+                <div class="stat-label" data-en="Happy Clients" data-zh="滿意客戶">Happy Clients</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="98">0</div>
+                <div class="stat-suffix">%</div>
+                <div class="stat-label" data-en="Satisfaction Rate" data-zh="滿意率">Satisfaction Rate</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="42">0</div>
+                <div class="stat-label" data-en="Countries Served" data-zh="服務國家">Countries Served</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label" data-en="Years Experience" data-zh="年從業經驗">Years Experience</div>
+            </div>
+        </div>
+        <button class="stats-cta reveal" id="openOrdersBtn" data-en="🔥 View Recent Orders" data-zh="🔥 查看近期訂單">🔥 View Recent Orders</button>
+    </div>
+</section>
+
+<!-- ===== ORDERS MODAL ===== -->
+<div class="modal-overlay" id="ordersModal">
+    <div class="modal-box orders-modal-box">
+        <button class="modal-close" id="closeOrdersModal">✕</button>
+        <h3 data-en="Recent Orders" data-zh="近期訂單">Recent Orders</h3>
+        <p class="orders-subtitle" data-en="Real orders from verified clients worldwide" data-zh="來自全球認證客戶的真實訂單">Real orders from verified clients worldwide</p>
+        <div class="orders-list">
+            <div class="order-item"><span class="order-flag">🇺🇸</span><div class="order-info"><strong>James R.</strong><span>Rolex Submariner · Black</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇸🇬</span><div class="order-info"><strong>Sarah T.</strong><span>Patek Nautilus · Blue</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇬🇧</span><div class="order-info"><strong>Michael K.</strong><span>AP Royal Oak · Steel</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇦🇺</span><div class="order-info"><strong>David L.</strong><span>Rolex Yacht-Master · Rose Gold</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇨🇦</span><div class="order-info"><strong>Emma W.</strong><span>LV Neverfull · Monogram</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇩🇪</span><div class="order-info"><strong>Hans M.</strong><span>Rolex Daytona · White Gold</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇫🇷</span><div class="order-info"><strong>Sophie B.</strong><span>Hermès Birkin 30 · Black</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇯🇵</span><div class="order-info"><strong>Kenji T.</strong><span>AP Royal Oak Offshore</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇲🇾</span><div class="order-info"><strong>Ahmad R.</strong><span>Rolex GMT-Master II</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+            <div class="order-item"><span class="order-flag">🇺🇸</span><div class="order-info"><strong>Chris P.</strong><span>Chanel Classic Flap · Black</span></div><span class="order-status" data-en="Delivered ✓" data-zh="已送達 ✓">Delivered ✓</span></div>
+        </div>
+        <button class="orders-contact-btn" data-en="I Want to Order Too →" data-zh="我也要下單 →">I Want to Order Too →</button>
+    </div>
+</div>
+
+<!-- ===== SOCIAL PROOF WALL ===== -->
+<section class="social-wall-section">
+    <div class="social-wall-inner">
+        <p class="section-eyebrow" data-en="CLIENT GALLERY" data-zh="客戶曬圖">CLIENT GALLERY</p>
+        <h2 class="section-title" data-en="Real Clients, Real Pieces" data-zh="真實客戶，真實產品">Real Clients, Real Pieces</h2>
+        <div class="social-grid">
+            <div class="social-item reveal" style="background-image:url('images/review-1.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Rolex Datejust · Blue Diamond</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-2.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Rolex Oyster Perpetual · Tiffany</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-3.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Cartier Ronde Must · Diamond</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-4.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Cartier Ballon Bleu · Steel</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-5.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Seiko 5 Sports · Black Dial</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-6.jpg.png')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Mido Baroncelli · White Dial</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-7.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Cartier Ballon Bleu · Diamond</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-8.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Longines DolceVita · Classic</span></div>
+            </div>
+            <div class="social-item reveal" style="background-image:url('images/review-9.jpg.jpg')">
+                <div class="social-overlay"><span>⭐⭐⭐⭐⭐ Rolex Datejust · Pink Diamond</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTENT HOOK / FREE GIFT ===== -->
+<section class="hook-section">
+    <div class="hook-inner reveal">
+        <div class="hook-badge" data-en="🎁 FREE GIFT" data-zh="🎁 免費禮物">🎁 FREE GIFT</div>
+        <h2 class="hook-title" data-en="Get Our Exclusive<br>2024 Catalogue" data-zh="獲取我們的獨家<br>2024產品目錄">Get Our Exclusive<br>2024 Catalogue</h2>
+        <p class="hook-desc" data-en="Add us on WhatsApp and receive instantly:" data-zh="添加我們的WhatsApp，立即獲得：">Add us on WhatsApp and receive instantly:</p>
+        <ul class="hook-list">
+            <li data-en="✦ Full 2024 collection catalogue (200+ styles)" data-zh="✦ 完整2024系列目錄（200+款式）">✦ Full 2024 collection catalogue (200+ styles)</li>
+            <li data-en="✦ Authentic vs replica identification guide" data-zh="✦ 真假鑑別指南">✦ Authentic vs replica identification guide</li>
+            <li data-en="✦ New client exclusive discount code" data-zh="✦ 新客戶專屬優惠碼">✦ New client exclusive discount code</li>
+            <li data-en="✦ Priority response & VIP service" data-zh="✦ 優先回覆及VIP服務">✦ Priority response & VIP service</li>
+        </ul>
+        <div class="hook-actions">
+            <a href="https://wa.me/1234567890?text=Hi%2C%20I%27d%20like%20to%20get%20the%20free%20catalogue%21" class="hook-whatsapp-btn" target="_blank">
+                <span>📱</span>
+                <span data-en="Get Free Catalogue on WhatsApp" data-zh="在WhatsApp獲取免費目錄">Get Free Catalogue on WhatsApp</span>
+            </a>
+            <a href="https://t.me/yourusername" class="hook-telegram-btn" target="_blank">
+                <span>✈️</span>
+                <span data-en="Get on Telegram" data-zh="在Telegram獲取">Get on Telegram</span>
+            </a>
+        </div>
+        <p class="hook-note" data-en="⚡ Sent within 2 minutes · No spam, ever" data-zh="⚡ 2分鐘內發送 · 絕不發送垃圾訊息">⚡ Sent within 2 minutes · No spam, ever</p>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+    <div class="testimonials-inner">
+        <p class="section-eyebrow" data-en="CLIENT REVIEWS" data-zh="客戶評價">CLIENT REVIEWS</p>
+        <h2 class="section-title" data-en="Trusted Worldwide" data-zh="全球信賴">Trusted Worldwide</h2>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="&ldquo;Absolutely stunning quality. My friends couldn't believe it wasn't from the boutique. Fast shipping to LA, arrived in 6 days.&rdquo;" data-zh="「品質令人驚嘆。我的朋友們不敢相信這不是從精品店買的。快速發貨到洛杉磯，6天到達。」">"Absolutely stunning quality. My friends couldn't believe it wasn't from the boutique. Fast shipping to LA, arrived in 6 days."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">J</div>
+                    <div>
+                        <strong>James R.</strong>
+                        <span>Los Angeles, USA 🇺🇸</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="&ldquo;Third order with them. The Nautilus is perfect — every detail matches. Packaging was discreet and professional.&rdquo;" data-zh="「第三次在這裡下單。鸚鵡螺完美無缺——每個細節都吻合。包裝低調且專業。」">"Third order with them. The Nautilus is perfect — every detail matches. Packaging was discreet and professional."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <strong>Sarah T.</strong>
+                        <span>Singapore 🇸🇬</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="&ldquo;Responded within minutes on WhatsApp. The watch arrived beautifully packaged. Couldn't be happier with the purchase.&rdquo;" data-zh="「在WhatsApp上幾分鐘內就回覆了。手錶包裝精美到達。對這次購買非常滿意。」">"Responded within minutes on WhatsApp. The watch arrived beautifully packaged. Couldn't be happier with the purchase."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div>
+                        <strong>Michael K.</strong>
+                        <span>London, UK 🇬🇧</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROCESS SECTION ===== -->
+<section class="process-section reveal">
+    <div class="process-inner">
+        <p class="section-eyebrow" data-en="HOW IT WORKS" data-zh="購買流程">HOW IT WORKS</p>
+        <h2 class="section-title" data-en="Simple & Secure" data-zh="簡單安全">Simple & Secure</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-num">01</div>
+                <h4 data-en="Contact Us" data-zh="聯繫我們">Contact Us</h4>
+                <p data-en="Reach out via WhatsApp, Telegram or WeChat" data-zh="通過WhatsApp、Telegram或微信聯繫">Reach out via WhatsApp, Telegram or WeChat</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-num">02</div>
+                <h4 data-en="Choose Style" data-zh="選擇款式">Choose Style</h4>
+                <p data-en="Browse our full catalogue and pick your piece" data-zh="瀏覽完整目錄，選擇您的款式">Browse our full catalogue and pick your piece</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-num">03</div>
+                <h4 data-en="Secure Payment" data-zh="安全付款">Secure Payment</h4>
+                <p data-en="Pay safely via PayPal with buyer protection" data-zh="通過PayPal安全付款，享有買家保護">Pay safely via PayPal with buyer protection</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-num">04</div>
+                <h4 data-en="Fast Delivery" data-zh="快速配送">Fast Delivery</h4>
+                <p data-en="Discreet packaging, worldwide delivery in 7-14 days" data-zh="低調包裝，全球7-14天送達">Discreet packaging, worldwide delivery in 7-14 days</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta-section">
+    <div class="final-cta-inner">
+        <h2 data-en="Ready to Elevate Your Style?" data-zh="準備好提升您的品味了嗎？">Ready to Elevate Your Style?</h2>
+        <p data-en="Contact us now and get your personalized price list." data-zh="立即聯繫我們，獲取您的專屬價格表。">Contact us now and get your personalized price list.</p>
+        <button class="final-cta-btn" data-en="Contact Us Now" data-zh="立即聯繫我們">Contact Us Now</button>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-inner">
+        <div class="logo">
+            <span class="logo-main">LUXE</span>
+            <span class="logo-sub">VAULT</span>
+        </div>
+        <p class="footer-note" data-en="© 2024 Luxe Vault. All Rights Reserved." data-zh="© 2024 Luxe Vault。版權所有。">© 2024 Luxe Vault. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- ===== FIXED CONTACT BAR ===== -->
+<div class="fixed-bar" id="fixedBar">
+    <button class="fixed-bar-btn" id="openContactBtn">
+        <span class="fixed-bar-icon">💬</span>
+        <span data-en="Contact for Price" data-zh="聯繫獲取價格">Contact for Price</span>
+    </button>
+</div>
+
+<!-- ===== CONTACT MODAL ===== -->
+<div class="modal-overlay" id="contactModal">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal">✕</button>
+        <div class="modal-header">
+            <h3 data-en="Get Your Best Price" data-zh="獲取最優價格">Get Your Best Price</h3>
+            <p data-en="Choose how you'd like to connect:" data-zh="選擇您偏好的聯繫方式：">Choose how you'd like to connect:</p>
+        </div>
+        <div class="modal-contacts">
+            <a href="https://wa.me/1234567890" class="modal-contact-item whatsapp" target="_blank">
+                <div class="contact-left">
+                    <span class="contact-emoji">📱</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span data-en="Fastest response" data-zh="最快回覆">Fastest response</span>
+                    </div>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://t.me/yourusername" class="modal-contact-item telegram" target="_blank">
+                <div class="contact-left">
+                    <span class="contact-emoji">✈️</span>
+                    <div>
+                        <strong>Telegram</strong>
+                        <span>@yourusername</span>
+                    </div>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+            <a href="#" class="modal-contact-item wechat" onclick="copyWechat(event)">
+                <div class="contact-left">
+                    <span class="contact-emoji">💬</span>
+                    <div>
+                        <strong>WeChat</strong>
+                        <span data-en="Tap to copy ID" data-zh="點擊複製ID">Tap to copy ID</span>
+                    </div>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://m.me/yourpage" class="modal-contact-item facebook" target="_blank">
+                <div class="contact-left">
+                    <span class="contact-emoji">📘</span>
+                    <div>
+                        <strong>Facebook</strong>
+                        <span>Messenger</span>
+                    </div>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+        </div>
+        <div class="modal-paypal">
+            <span>💳</span>
+            <span data-en="Secure payment via PayPal" data-zh="通過PayPal安全付款">Secure payment via PayPal</span>
+        </div>
+        <p class="modal-response" data-en="⚡ Average response time: under 5 minutes" data-zh="⚡ 平均回覆時間：5分鐘內">⚡ Average response time: under 5 minutes</p>
+    </div>
+</div>
+
+<!-- ===== LANGUAGE MODAL ===== -->
+<div class="modal-overlay" id="langModal">
+    <div class="modal-box lang-modal-box">
+        <button class="modal-close" id="closeLangModal">✕</button>
+        <h3 data-en="Select Language" data-zh="選擇語言">Select Language</h3>
+        <div class="lang-options">
+            <button class="lang-option-btn" data-lang="en">🇺🇸 English</button>
+            <button class="lang-option-btn" data-lang="zh">🇹🇼 繁體中文</button>
+            <button class="lang-option-btn" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-option-btn" data-lang="th">🇹🇭 ภาษาไทย</button>
+            <button class="lang-option-btn" data-lang="ms">🇲🇾 Bahasa Melayu</button>
+            <button class="lang-option-btn" data-lang="ja">🇯🇵 日本語</button>
+        </div>
+    </div>
+</div>
+
+<!-- WeChat copy toast -->
+<div class="toast" id="toast" data-en="WeChat ID copied!" data-zh="微信號已複製！">WeChat ID copied!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
